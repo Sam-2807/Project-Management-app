@@ -11,10 +11,13 @@ app.use(cookieParser());
 
 
 //routes
-app.get("/", (req, res) => {
-    res.status(200).json({
-        message: "Welcome to the Project Management App API"
-    });
-})
+import healthCheckRoute from "./routes/healthcheck.routes.js"
+import authRoutes from "./routes/user.routes.js"
+
+
+app.use("/api/v1/user", authRoutes);
+app.use("/api/v1/healthcheck", healthCheckRoute)
+
+
 
 export { app }
