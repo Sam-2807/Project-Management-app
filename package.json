@@ -1,0 +1,29 @@
+{
+  "name": "project-management-app",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Sam-2807/Project-Management-app#readme",
+  "bugs": {
+    "url": "https://github.com/Sam-2807/Project-Management-app/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sam-2807/Project-Management-app.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.16.3"
+  }
+}
